@@ -10,6 +10,11 @@ const Accordian = () => {
     const [enableMulty,setEnableMulty] = useState(false);
     const [multi,setMulti] = useState([]);
 
+    const handleCloseAll = () => {
+        setMulti([])
+        setSelected(null)
+    }
+
     const handleSingleSelection = (currentId) => {
         // if(currentId === selected){
         //     setSelected(null)
@@ -27,8 +32,12 @@ const Accordian = () => {
         console.log(multi);
 
     }
+
     return(
         <div className="wrapper">
+            <button onClick={handleCloseAll}>
+                close all
+            </button>
             <button
             onClick={() => setEnableMulty(!enableMulty)}
             >Enable mult selection</button>
