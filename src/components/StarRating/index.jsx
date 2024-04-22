@@ -13,7 +13,6 @@ const StarRating = ({ numStars = 5 }) => {
     setHover(getCurrentIndex);
   };
   const handleMouseLeave = () => {
-    console.log('leave');
     setHover(rating);
   };
 

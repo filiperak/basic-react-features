@@ -19,7 +19,6 @@ const RandomColor = () => {
             for(let i = 0; i < 6; i++){
                 hexColor += hex[randColorUtility(hex.length)];
             }
-            console.log(hexColor);
             setColor(hexColor);
         }else{
             setColor(`RGB(${R},${G},${B})`)

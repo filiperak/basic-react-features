@@ -31,7 +31,6 @@ const ImageSlider = ({url,limit= 5,page = 1}) => {
             fetchImages(url);
         }
     },[url])
-    console.log(images);
 
     const handleNext = () => {
         setCurrentSlide(currentSlide === images.length-1? 0 : currentSlide+1)
