@@ -7,7 +7,6 @@ const ScrolllIndicator = ({ url }) => {
   const [scrollPer, setScrollPer] = useState(0);
   useEffect(() => {
     fetchData(url);
-    console.log(data);
   }, [url]);
 
   async function fetchData(dataURL) {
@@ -45,7 +44,6 @@ const ScrolllIndicator = ({ url }) => {
       window.removeEventListener("scroll", () => {});
     };
   },[]);
-  console.log(scrollPer);
   return (
     <div>
       <div className="top-container">

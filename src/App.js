@@ -8,6 +8,7 @@ import ImageSlider from './components/imageSlider';
 import LoadMore from './components/loadMore';
 import RandomColor from './components/randomColor/index';
 import ScrolllIndicator from './components/scrollIndicator';
+import SearchAPI from './components/searchAutoComplete';
 import TreeView from './components/treeMenu';
 import menus from './components/treeMenu/data';
 
@@ -27,6 +28,7 @@ function App() {
         <Theme/>
       </ThemeContextProvider>
       <ScrolllIndicator url={'https://dummyjson.com/products'}/>
+      <SearchAPI/>
     </div>
   );
 }
