@@ -7,6 +7,7 @@ import BarCode from './components/barCode';
 import ImageSlider from './components/imageSlider';
 import LoadMore from './components/loadMore';
 import RandomColor from './components/randomColor/index';
+import ScrolllIndicator from './components/scrollIndicator';
 import TreeView from './components/treeMenu';
 import menus from './components/treeMenu/data';
 
@@ -25,6 +26,7 @@ function App() {
       <ThemeContextProvider>
         <Theme/>
       </ThemeContextProvider>
+      <ScrolllIndicator url={'https://dummyjson.com/products'}/>
     </div>
   );
 }
