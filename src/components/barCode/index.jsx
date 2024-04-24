@@ -6,9 +6,18 @@ const BarCode = () => {
     const [input,setINput] = useState('')
     const handleGenerate = () => {
         setQrcode(input)
+        setINput('')
     }
   return (
-    <div>
+    <div 
+        style={{
+            display:'flex',
+            flexDirection:'column',
+            justifyContent:'center',
+            alignItems:'center',
+            border:'1px solid red'
+        }}
+    >
         <h1>QR code generator</h1>
         <div>
             <input type="text" name="qr-code" value={input} onChange={(e) => setINput(e.target.value)}/>
