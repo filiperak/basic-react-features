@@ -9,6 +9,8 @@ import LoadMore from './components/loadMore';
 import RandomColor from './components/randomColor/index';
 import ScrolllIndicator from './components/scrollIndicator';
 import SearchAPI from './components/searchAutoComplete';
+import TabsTest from './components/tabs/tab-test';
+import Tabs from './components/tabs/tabs';
 import TreeView from './components/treeMenu';
 import menus from './components/treeMenu/data';
 
@@ -29,6 +31,7 @@ function App() {
       </ThemeContextProvider>
       <ScrolllIndicator url={'https://dummyjson.com/products'}/>
       <SearchAPI/>
+      <TabsTest/>
     </div>
   );
 }
